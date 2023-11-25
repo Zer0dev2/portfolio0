@@ -5,6 +5,100 @@ body{
     background: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+header div ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+header div li {
+    list-style: none;
+    float: left;
+    margin: 0px 20px;
+}
+
+header div li a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+    transition: 250ms ease all;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+header div li a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    text-shadow: 3px 2px 4px green;
+}
+
+.h-btn {
+    display: none;
+    transition: 250ms ease all;
+    padding: 3px 10px !important;
+    font-size: 2rem;
+    background: #15ad15;
+    color: white;
+    border: none;
+    border-radius: 5px !important;
+
+
+}
+
+#hide {
+    display: none;
+}
+
+@media only screen and (max-width:700px) {
+    .h-btn{
+        display: block;
+        z-index:200;
+
+    }
+
+    header div ul {
+     width: 200vw;
+     height: 100vh;
+        position: absolute;
+        background-color: white;
+        left: 2%;
+        top: 10%;
+        width: 90%;
+
+    }
+
+    header div ul li {
+        float: none;
+        border-bottom: 1px solid black;
+        width: 100%;
+        line-height: 2;
+        text-align: center;
+        transform: 250ms ease all;
+        transform: translateY(-15px);
+
+    }
+
+    .menu {
+        display: none;
+    }
+   
+
+
+}
+
+
 .eat{
     color: #0C7B3F;
 font-family: Inter;
