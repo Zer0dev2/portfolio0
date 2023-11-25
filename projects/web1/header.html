@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <style>
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+
+        }
+
+        header div ul {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        header div li {
+            list-style: none;
+            float: left;
+            margin: 0px 20px;
+        }
+
+        header div li a {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: black;
+            transition: 250ms ease all;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        header div li a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+            text-shadow: 3px 2px 4px green;
+        }
+
+        .h-btn {
+            display: none;
+            transition: 250ms ease all;
+            padding: 3px 10px !important;
+            font-size: 2rem;
+            background: #15ad15;
+            color: white;
+            border: none;
+            border-radius: 5px !important;
+
+
+        }
+
+        #hide {
+            display: none;
+        }
+
+        @media only screen and (max-width:700px) {
+            .h-btn{
+                display: block;
+                z-index:200;
+
+            }
+
+            header div ul {
+             width: 200vw;
+             height: 100vh;
+                position: absolute;
+                background-color: white;
+                left: 2%;
+                top: 10%;
+                width: 90%;
+
+            }
+
+            header div ul li {
+                float: none;
+                border-bottom: 1px solid black;
+                width: 100%;
+                line-height: 2;
+                text-align: center;
+                transform: 250ms ease all;
+                transform: translateY(-15px);
+
+            }
+
+            .menu {
+                display: none;
+            }
+           
+
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div><img src="img/logo2.png" alt="" width="56px"></div>
+        <div>
+            <ul class="menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <button onclick="show()" id="show" class="h-btn"><i class="bi bi-list"></i></button>
+            <button onclick="hide()" id="hide"><i class="bi bi-x-lg" class="h-btn"></i></button>
+        </div>
+    </header>
+    <div class="box">
+
+    </div>
+    <script>
+
+        $(document).ready(function () {
+            $("#show").click(1000, function () {
+                $(".menu").toggle(1000);
+                $("#show").css("display", "none");
+                $("#hide").css({ 'display': 'block', 'transform': 'rotate(180deg)' });
+            });
+
+
+        });
+        $(document).ready(function () {
+            $("#hide").click(1000, function () {
+                $(".menu").hide(1000);
+                $("#show").css("display", "block");
+                $("#hide").css("display", "none");
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

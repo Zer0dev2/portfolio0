@@ -1,0 +1,94 @@
+body{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.Calculator{
+	width: 245px;
+	margin: auto;
+	background-color: #2e2e34;
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px black;
+
+}
+#answer{
+	width: 210px;
+	padding: 10px;
+	background-color: transparent;
+	box-shadow: 0 0 8px #4e4e5c;
+	color: white;
+	font-size: 2rem;
+	margin: 10px;
+	border-radius: 10px;
+	text-align:right;
+}
+input:focus{
+	outline: none;
+	border: none;
+}
+.cal-btn{
+	width: 50px;
+	height: 50px;
+	padding: 1px;
+	color: white;
+	background-color:  #4e4e5c;
+	border-radius: 50%;
+	border:none;
+	margin: 4px;
+	box-shadow: 0 0 8px black;
+	font-size: 1.7rem;
+}
+.cal-btn:hover{
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 8px crimson;
+	cursor: pointer;
+	transition: 250ms ease-in-out;
+}
+#cancle{
+	width: 50px;
+	height: 50px;
+	padding: 1px;
+	color: white;
+	border-radius: 50%;
+	border:none;
+	margin: 4px;
+	box-shadow: 0 0 8px black;
+	font-size: 1.7rem;
+	background-color: crimson;
+}
+#cancle:hover{
+	background-color: red;
+	color: white;
+	box-shadow: 0 0 8px crimson;
+	cursor: pointer;
+	transition: 250ms ease-in-out;
+}
+#equal{
+	background-color: yellow;
+	border-radius: 10px;
+	text-align: center;
+
+}
+#equal:hover{
+	cursor: pointer;
+	background-color: yellowgreen;
+	box-shadow: 0 0 10px red;
+	transition: 250ms ease-in-out
+}
+#equal-btn{
+	height: 100px;
+	width: 50px;
+	background-color: transparent;
+	font-size: 1.7rem;
+	color:black;
+	border:none;
+}
+#equal-btn:hover{
+	cursor: pointer;
+}
