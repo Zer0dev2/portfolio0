@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><img src="img/logo2.png" alt="" width="56px"></div>
+        <div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="ab.html">About</a></li>
+                <li><a href="cont.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <button onclick="show()" id="show" class="h-btn"><i class="bi bi-list"></i></button>
+            <button onclick="hide()" id="hide"><i class="bi bi-x-lg" class="h-btn"></i></button>
+        </div>
+        <script>
+
+            $(document).ready(function () {
+                $("#show").click(1000, function () {
+                    $(".menu").toggle(1000);
+                    $("#show").css("display", "none");
+                    $("#hide").css({ 'display': 'block', 'transform': 'rotate(180deg)' });
+                });
+    
+    
+            });
+            $(document).ready(function () {
+                $("#hide").click(1000, function () {
+                    $(".menu").hide(1000);
+                    $("#show").css("display", "block");
+                    $("#hide").css("display", "none");
+                });
+    
+            });
+    
+        </script>
+    </header>
+<section>
+    <div class="about-home">
+        <div>
+            <h1>About</h1>
+            <h2>Our Store </h2>
+        </div>
+    </div>
+</section>
+<br><br><br>
+
+<section class="about-content" data-aos="fade-up"
+data-aos-duration="3000">
+    <h1>About</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptates eum ea illum iure. Explicabo, quidem similique ab illum repellat necessitatibus, ratione, officiis qui unde omnis adipisci alias nisi aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptates eum ea illum iure. Explicabo, quidem similique ab illum repellat necessitatibus, ratione, officiis qui unde omnis adipisci alias nisi aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptates eum ea illum iure. Explicabo, quidem similique ab illum repellat necessitatibus, ratione, officiis qui unde omnis adipisci alias nisi aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptates eum ea illum iure. Explicabo, quidem similique ab illum repellat necessitatibus, ratione, officiis qui unde omnis adipisci alias nisi aperiam.</p>
+
+</section>
+
+<footer data-aos="fade-up"
+data-aos-duration="3000">
+    <div class="footer-main">
+        <div class="footer-img">
+            <img src="img/pizza2.png" alt="" width="100%">
+        </div>
+        <div class="footer-content">
+            <h1>Newsletter</h1>
+            <h1>Get <span>10%</span> Off Your Order </h1>
+            <p>Enter your email and receive a 10% discount on your next order!</p>
+            <div class="email-list">
+                <form action="">
+                    <input type="email" class="email" placeholder="Enter Your Email"><button class="em-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-img">
+            <img src="img/burger2.png" alt="" width="100%">
+        </div>
+
+    </div>
+
+    <div class="footer-icon-box">
+        <div>
+            <i class="bi bi-truck"></i> <strong>Free Shiping</strong>
+            <p>Sign up for updates and get free shipping</p>
+        </div>
+        <div>
+            <i class="bi bi-clock-history"></i>
+            <strong>Fast Delivery</strong>
+            <p>We deliver goods around the world</p>
+        </div>
+
+        <div>
+            <i class="bi bi-handbag"></i>
+            <strong>Best Quality</strong>
+            <p>We are international chain of restaurants.</p>
+        </div>
+        <div>
+            <i class="bi bi-shop-window"></i>
+            <strong>Our Store</strong>
+            <p>You can see our “here and now” products</p>
+        </div>
+    </div>
+
+    <div class="footer-main-links">
+        <div>
+            <strong>INFORMATION</strong>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Refunds</li>
+                <li>Shiping & Returns</li>
+                <li>Terms & Use </li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>QUICK LINKS</strong>
+            <ul>
+                <li>Cart</li>
+                <li>Account</li>
+                <li>Wishlist</li>
+                <li>Checkout </li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>CONTACT US</strong>
+                <strong>+123456789</strong>
+                <p>contact@gmail.com</p>
+        </div>
+
+        <div>
+            <strong>OUR COMPANY</strong>
+            <P>Address: 570 8th Ave, New York,
+                NY 10018 United States</P>
+            <P>Hours: 9.30am – 6.30pm
+                Monday to Friday</P>    
+        </div>
+    </div>
+
+    <div style="background-color: #1E1D23;">
+        
+    <center><img src="img/logo2.png" alt="" width="150px"></center>
+    <hr class="hr">
+    </div>
+</footer>
+</body>
+</html>
